@@ -1,0 +1,7 @@
+
+management:
+  endpoints:
+#    enabled: true
+    web:
+      exposure:
+        include: "*"
