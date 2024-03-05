@@ -33,8 +33,33 @@
       <div class="row marketing">
         <h3>Examples</h3>
         <div class="col-lg-6">
-          <h4>Threaddump</h4>
-          <p><a href="actuator/threaddump" target="_blank">actuator/threaddump</a></p>
+          <h4>CPU</h4>
+          <p><a href="actuator/profiler?event=cpu" target="_blank">actuator/profiler?event=cpu</a></p>
+          <p><a href="actuator/profiler?event=itimer" target="_blank">actuator/profiler?event=itimer</a></p>
+          <p><a href="actuator/profiler?event=ctimer" target="_blank">actuator/profiler?event=ctimer</a></p>
+          <p><a href="actuator/profiler?event=ctimer&interval=999us" target="_blank">actuator/profiler?event=ctimer&interval=999us</a></p>
+          <p><a href="actuator/profiler?event=ctimer&interval=9ms&duration=10" target="_blank">actuator/profiler?event=ctimer&interval=9ms&duration=10</a></p>
+          <p><a href="actuator/profiler?event=ctimer&threads" target="_blank">actuator/profiler?event=ctimer&threads</a></p>
+        </div>
+        <div class="col-lg-6">
+          <h4>Wall Clock</h4>
+          <p><a href="actuator/profiler?event=wall&total&threads" target="_blank">actuator/profiler?event=wall&total&threads</a></p>
+        </div>
+        <div class="col-lg-6">
+          <h4>Memory</h4>
+          <p><a href="actuator/profiler?event=alloc" target="_blank">actuator/profiler?event=alloc</a></p>
+          <p><a href="actuator/profiler?event=alloc&total" target="_blank">actuator/profiler?event=alloc&total</a></p>
+          <p><a href="actuator/profiler?alloc=1k&threads" target="_blank">actuator/profiler?alloc=1k&threads</a></p>
+        </div>
+        <div class="col-lg-6">
+          <h4>Lock</h4>
+          <p><a href="actuator/profiler?event=lock" target="_blank">actuator/profiler?event=lock</a></p>
+        </div>
+        <div class="col-lg-6">
+          <h4>Java methods</h4>
+            <p><a href="actuator/profiler?event=one.profiler.AsyncProfiler.execute" target="_blank">actuator/profiler?one.profiler.AsyncProfiler.execute<init></a></p>
+            <p><a href="actuator/profiler?event=java.lang.NullPointerException.<init>" target="_blank">actuator/profiler?java.lang.NullPointerException.&lt;init&gt;<init></a></p>
+            <p><a href="actuator/profiler?event=java.net.Socket.<init>" target="_blank">actuator/profiler?event=java.net.Socket.&lt;init&gt;</a></p>
         </div>
       </div>
 
