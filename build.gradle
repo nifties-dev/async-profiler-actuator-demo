@@ -21,10 +21,17 @@ configurations {
 repositories {
 	mavenLocal()
 	mavenCentral()
+	maven {
+		url = uri("https://maven.pkg.github.com/nifties-dev/async-profiler-actuator")
+		credentials {
+			username = project.findProperty("gpr.user") ?: System.getenv("GITHUB_USERNAME")
+			password = project.findProperty("gpr.key") ?: System.getenv("GITHUB_TOKEN")
+		}
+	}
 }
 
 dependencies {
-	implementation 'dev.nifties.integration:async-profiler-actuator:0.1.0-SNAPSHOT'
+	implementation 'dev.nifties.integration:async-profiler-actuator:0.1.0-alfa'
 	implementation 'org.springframework.boot:spring-boot-starter-actuator'
 	implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
 	implementation 'org.springframework.boot:spring-boot-starter-web'
