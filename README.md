@@ -4,6 +4,14 @@ This is a small SpringBoot WEB application with AsyncProfilerActuator enabled.
 Index page contains short tutorial for most commonly used profiling scenarios.
 
 # HowTo
+## Run on Docker
+Pull and run image:
+```
+docker pull nifties/async-profiler-actuator-demo:latest
+docker run -p 80:8080 -p 443:8443 -p 9000:9000 --rm --name apa-demo nifties/async-profiler-actuator-demo:latest
+```
+Open http://localhost in your browser.
+
 ## Build
 Currently, _async-profiler-actuator_ is not being published to any global repositories, but you can download it from
 [GitHub Packages](https://github.com/nifties-dev/async-profiler-actuator/packages/2093872).
