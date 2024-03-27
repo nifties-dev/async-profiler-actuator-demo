@@ -8,7 +8,7 @@ Index page contains short tutorial for most commonly used profiling scenarios.
 Pull and run image:
 ```
 docker pull nifties/async-profiler-actuator-demo:latest
-docker run -p 80:8080 -p 443:8443 -p 9000:9000 --rm --name apa-demo nifties/async-profiler-actuator-demo:latest
+docker run -p 80:8080 -p 9000:9000 --rm --name apa-demo nifties/async-profiler-actuator-demo:latest
 ```
 Open http://localhost in your browser.
 
@@ -35,5 +35,5 @@ In separate terminal:
 ## Build and Run Using Docker 
 ```
 docker image build async-profiler-actuator-demo
-docker run -p 80:8080 -p 443:8443 -p 9000:9000 --rm --name async-profiler-actuator-demo async-profiler-actuator-demo
+docker run -p 80:8080 -p 9000:9000 --rm --name async-profiler-actuator-demo async-profiler-actuator-demo
 ```
